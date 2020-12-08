@@ -26,3 +26,16 @@ public class BlowUp {
         } while (--counter >= 0);
       }
     }
+    //Return the variable back to the top of the FOR loop after an execution is complete.
+    return userLineOfString.toString();
+  }
+  
+  //Sources from https://stackoverflow.com/questions/19150171/a-string-blowup-method
+  public static void main(String[] args) throws java.lang.Exception {
+  
+    //Output
+    System.out.println(blowup("1t2x"));
+    System.out.println(blowup("a3tx2zz"));
+    System.out.println(blowup("3end5"));
+  }
+}
